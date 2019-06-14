@@ -7,7 +7,7 @@ public class Flight {
     // initialization block
     {
         isSeatAvailable = new boolean[seats] ;
-        for(int i;i<seats;i++) 
+        for(int i=0;i<seats;i++)
            isSeatAvailable[i] = true; 
         }
 
@@ -15,10 +15,10 @@ public class Flight {
     }
     public Flight(int flightNumber) {
        this(); 
-       this.flightNumber = flightNumber 
+       this.flightNumber = flightNumber ;
     }
     public Flight(char flightClass) {
-        this;
+        this();
         this.flightClass = flightClass ;
     }
     
