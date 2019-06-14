@@ -3,7 +3,7 @@ package com.samy.flight;
 public class Flight {
     private int passengers, flightNumber, seats = 150;
     private char flightClass;
-     boolean[] isSeatAvailable;
+    boolean[] isSeatAvailable;
 
     // initialization block
     {
@@ -27,8 +27,17 @@ public class Flight {
         this.flightClass = flightClass;
     }
 
+    public void add1Passenger() {
+        if (hasSeating())
+            passengers += 1;
+    }
+
     public boolean hasSeating() {
         return passengers < seats;
+    }
+
+    private void handleTooMany() {
+        System.out.println("Too many");
     }
 
 
