@@ -1,6 +1,7 @@
 package com.samy.flight;
 
 public class Flight {
+    private static int MAX_FAA_SEATS = 550;
     private int passengers, flightNumber, seats = 150;
     private char flightClass;
     boolean[] isSeatAvailable;
@@ -14,6 +15,7 @@ public class Flight {
             seat = true;
     }
 
+    // constructors
     public Flight() {
     }
 
@@ -25,6 +27,17 @@ public class Flight {
     public Flight(char flightClass) {
         this();
         this.flightClass = flightClass;
+    }
+
+    public void setSeats(int seats) {
+        if (seats<MAX_FAA_SEATS)
+        this.seats = seats;
+        else
+            System.out.println("maximum allowed seats is 550 ");
+    }
+
+    public int getSeats() {
+        return seats;
     }
 
     public void add1Passenger() {
