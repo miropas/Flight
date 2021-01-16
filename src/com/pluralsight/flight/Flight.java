@@ -1,4 +1,4 @@
-package com.samy.flight;
+package com.pluralsight.flight;
 
 public class Flight {
     private static int MAX_FAA_SEATS = 550;

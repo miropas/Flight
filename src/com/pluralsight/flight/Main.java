@@ -1,4 +1,4 @@
-package com.samy.flight;
+package com.pluralsight.flight;
 
 public class Main {
 
